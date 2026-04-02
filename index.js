@@ -1,16 +1,16 @@
 // Step 1: Variable Data
-let burgers = ['Hamburger', 'Cheeseburger'];   // global array
+const burgers = ['Hamburger', 'Cheeseburger'];   // global array
 let featuredDrink = 'Strawberry Milkshake';    // global variable
 
 // Step 2: Function and Block
 function addBurger() {
-  let newBurger = 'Flatburger';   // function-scoped variable
+  const newBurger = 'Flatburger';   // function-scoped variable
   burgers.push(newBurger);        // add to burgers array
 }
 
 // Step 3: Variable Declaration and Scope
 if (true) {
-  let anotherNewBurger = 'Maple Bacon Burger'; // block-scoped variable
+  const anotherNewBurger = 'Maple Bacon Burger'; // block-scoped variable
   burgers.push(anotherNewBurger);              // add to burgers array
 
   function changeFeaturedDrink() {
@@ -23,5 +23,13 @@ if (true) {
 
 // ✅ Testing
 addBurger();
-console.log(burgers);        // ['Hamburger', 'Cheeseburger', 'Maple Bacon Burger', 'Flatburger']
-console.log(featuredDrink);  // 'The JavaShake'
+console.log(featuredDrink); // 'strawberry milkshake' (before change)
+addBurgers();     
+console.log(burgers);   // ['Hamburger', 'Cheeseburger', 'Flatburger', 'Maple Bacon Burger']
+
+
+// Now call the function to change the drink
+changeFeaturedDrink();
+console.log(featuredDrink); // 'The JavaShake' (after change)
+
+

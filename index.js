@@ -17,8 +17,6 @@ if (true) {
     featuredDrink = 'The JavaShake';           // change global variable
   }
 
-  // Example usage inside the block
-  changeFeaturedDrink();
 }
 
 // ✅ Testing

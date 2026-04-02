@@ -22,10 +22,11 @@ if (true) {
 }
 
 // ✅ Testing
+console.log(burgers); // ['Hamburger', 'Cheeseburger', 'Flat
 addBurger();
-console.log(featuredDrink); // 'strawberry milkshake' (before change)
-addBurgers();     
-console.log(burgers);   // ['Hamburger', 'Cheeseburger', 'Flatburger', 'Maple Bacon Burger']
+console.log(burgers); // ['Hamburger', 'Cheeseburger', 'Flat
+console.log(featuredDrink); // 'The JavaShake' (after change)
+
 
 
 // Now call the function to change the drink

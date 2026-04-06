@@ -12,11 +12,10 @@ function addBurger() {
 if (true) {
   const anotherNewBurger = 'Maple Bacon Burger'; // block-scoped variable
   burgers.push(anotherNewBurger);              // add to burgers array
+}
 
-  function changeFeaturedDrink() {
-    featuredDrink = 'The JavaShake';           // change global variable
-  }
-
+function changeFeaturedDrink() {
+  featuredDrink = 'The JavaShake';           // change global variable
 }
 
 // ✅ Testing
